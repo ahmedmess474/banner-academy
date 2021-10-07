@@ -1,0 +1,69 @@
+.hero-img > img {
+  animation: up-down 2.5s ease-in-out infinite alternate-reverse both;
+  animation-name: bounceImage;
+}
+@keyframes bounceImage {
+  0% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+#heroCard {
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+  border: hidden;
+  background-color: rgb(32 31 66) !important;
+}
+
+#heroCard:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  background-image: url(wave-bottom.svg);
+  color: "#dfdfdf";
+  height: 275px;
+}
+#heroText {
+  color: white;
+  padding-left: 40px;
+}
+#heroDescription {
+  padding: 24px;
+}
+#heroText .btn {
+  margin-right: 40px;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+  color: white;
+}
+.btn-success {
+  color: #000;
+  background-color: #56e3bd;
+  border-color: #56e3bd;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 16px;
+}
+.btn-success:hover {
+  background-color: #6ae7c5;
+  border-color: #6ae7c5;
+}
+.btn-success-ouline {
+  color: white;
+  background-color: transparent;
+  border-color: #56e3bd;
+  font-weight: 500;
+  padding: 8px 20px;
+  box-shadow: 0px 0px 3px #56e3bd;
+
+  border-radius: 16px;
+}
+.btn-success-ouline:hover {
+  color: white;
+  background-color: #ffffff12;
+  border-color: #6ae7c5;
+}

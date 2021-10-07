@@ -19,7 +19,7 @@ class Partone extends Component {
 
   render() {
     return (
-      <div style={{backgroundColor:"#dfdfdf",paddingBottom:"50px"}} >
+      <div style={{backgroundColor:"#f5f5fa",paddingBottom:"50px"}} >
         <div className="container">
           <h3 className="text-center" style={{paddingTop:"20px"}}>دورات مميزة</h3>
           <h5 className="text-center" style={{marginTop:"30px"}}>ابدأ رحلتك في طلب العلم عبر أحد برامجنا!</h5>

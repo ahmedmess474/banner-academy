@@ -46,7 +46,7 @@ class Navbar extends Component {
  
   render() {
     return (
-      <nav className="navbar navbar-expand-lg fixed-top" style={{backgroundColor:"#56e3bd", color:'white',textAlign:"center"}}>
+      <nav className="navbar navbar-expand-lg fixed-top shadow" style={{backgroundColor:"rgb(32 31 66)", color:'white',textAlign:"center"}}>
         <button className="navbar-toggler" onClick={this.handleNav} type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon">
             list
@@ -63,7 +63,7 @@ class Navbar extends Component {
         </button>
         <div className="container">
           <div className="collapse navbar-collapse" id="navbarTogglerDemo03">
-              <Link className="btn btn-success" type='button' to="/inscriptions" style={{marginLeft:"40px"}}>
+              <Link className="btn btn-success-ouline" type='button' to="/inscriptions" style={{marginLeft:"40px"}}>
                 التسجيل
               </Link>
               <ul className="navbar-nav mr-auto mt-2 mt-lg-0" style={{marginLeft:"40px"}}>
