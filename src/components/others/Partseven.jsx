@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import pht7 from './pht7.PNG';
+import pht7 from '../../image/pht7.PNG';
 class Partseven extends Component {
   state = {
     one: true,
@@ -10,14 +10,23 @@ class Partseven extends Component {
   handleClick = (e) => {
     e.preventDefault();
     this.setState({one: !this.state.one});
+    if(this.state.one===true){
+      this.setState({two:true,three:true})
+    }
   }
   handleClick1 = (e) => {
     e.preventDefault();
     this.setState({two: !this.state.two});
+    if(this.state.two===true){
+      this.setState({one:true,three:true})
+    }
   }
   handleClick2 = (e) => {
     e.preventDefault();
     this.setState({three: !this.state.three});
+    if(this.state.three===true){
+      this.setState({one:true,two:true})
+    }
   }
   render() {
     return (
@@ -33,7 +42,7 @@ class Partseven extends Component {
                 <p style={{direction:"rtl"}}>مدرسة تكوين هي صرح علمي مستقل للتعلم. هدفنا تزويد مجتمعاتنا فرص دراسة مختلف التخصصات بطريقة فريدة من نوعها، وذلك عبر برنامج متميز وبأسلوب متطور باستخدام الشبكة الإلكترونية.</p>
               </div>
               <div className="card" style={{direction:"rtl",cursor:"pointer"}} onClick={this.handleClick}>
-                <h5 style={{color:"#56e3bd",marginTop:"18px",marginRight:"10px",marginBottom: this.state.one ? "18px" : "9px"}}>
+                <h5 style={{color:"rgb(32 31 66)",marginTop:"18px",marginRight:"10px",marginBottom: this.state.one ? "18px" : "9px"}}>
                   <i className="fal fa-angle-down"></i>
                   {" "}
                   01 برنامج الأكاديمية
@@ -47,7 +56,7 @@ class Partseven extends Component {
                 
               </div>
               <div className="card" style={{direction:"rtl",marginTop:"12px",cursor:"pointer"}} onClick={this.handleClick1}>
-                <h5 style={{color:"#56e3bd",marginTop:"18px",marginBottom:this.state.two ? "18px" : "9px",marginRight:"10px"}}>
+                <h5 style={{color:"rgb(32 31 66)",marginTop:"18px",marginBottom:this.state.two ? "18px" : "9px",marginRight:"10px"}}>
                   <i className="fal fa-angle-down"></i>
                   {" "}
                   02 خدماتنا
@@ -61,7 +70,7 @@ class Partseven extends Component {
                 
               </div>
               <div className="card" style={{direction:"rtl",marginTop:"12px",cursor:"pointer"}} onClick={this.handleClick2}>
-                <h5 style={{color:"#56e3bd",marginTop:"18px",marginBottom:this.state.three ? "18px" : "9px",marginRight:"10px"}}>
+                <h5 style={{color:"rgb(32 31 66)",marginTop:"18px",marginBottom:this.state.three ? "18px" : "9px",marginRight:"10px"}}>
                   <i className="fal fa-angle-down"></i>
                   {" "}
                   03 لماذا نحن?

@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import pht1 from "./pht1.png";
-import pht2 from "./pht2.png";
-import pht3 from "./pht3.png";
-import ph4 from "./ph4.png";
-import pht5 from "./pht5.png";
-import pht6 from "./pht6.png";
+import pht1 from "../../image/pht1.png";
+import pht2 from "../../image/pht2.png";
+import pht3 from "../../image/pht3.png";
+import ph4 from "../../image/ph4.png";
+import pht5 from "../../image/pht5.png";
+import pht6 from "../../image/pht6.png";
 
 
 class Parttwo extends Component {

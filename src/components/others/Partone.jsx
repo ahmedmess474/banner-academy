@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import img1 from './img1.png';
-import img4 from './img4.svg';
+import img1 from '../../image/img1.png';
+import img4 from '../../image/img4.svg';
 
 class Partone extends Component {
+  
   state={
     color:true
   }
@@ -16,7 +17,7 @@ class Partone extends Component {
     e.preventDefault();
     this.setState({color:true});
   }
-
+  
   render() {
     return (
       <div style={{backgroundColor:"#f5f5fa",paddingBottom:"50px"}} >
@@ -27,7 +28,7 @@ class Partone extends Component {
             <div className="col-md-3">
               <div className="card" style={{backgroundColor:"white",height:"330px"}}>
                 <img src={img1} height="50px" width="50px" alt="" style={{marginTop:"40px",marginBottom:"20px",alignSelf:"center"}} />
-                <h4 className="text-center" style={{cursor:"pointer",color:this.state.color ? "black" : "#56e3bd"}} onMouseEnter={this.onHover} onMouseLeave={this.onLeave}>
+                <h4 className="text-center ctn" style={{cursor:"pointer",color:this.state.color ? "black" : "#56e3bd"}} onMouseEnter={this.onHover} onMouseLeave={this.onLeave}>
                   الخياطة والطرز
                 </h4>
                 <div className="container">

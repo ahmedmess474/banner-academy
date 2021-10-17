@@ -1,9 +1,9 @@
 import React from "react";
-import blob from "./img/blobs/blob.svg";
-import blob1 from "./img/blobs/blob1.svg";
-import blob2 from "./img/blobs/blob2.svg";
-import blob3 from "./img/blobs/blob3.svg";
-import blob4 from "./img/blobs/blob4.svg";
+import blob from "../image/blobs/blob.svg";
+import blob1 from "../image/blobs/blob1.svg";
+import blob2 from "../image/blobs/blob2.svg";
+import blob3 from "../image/blobs/blob3.svg";
+import blob4 from "../image/blobs/blob4.svg";
 
 const blobs = [blob, blob1, blob2, blob3, blob4];
 let allBlobs = [];

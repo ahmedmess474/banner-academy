@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import img1 from './banner_background.jpg';
-import bg from './bg.png';
+import img1 from '../../image/banner_background.jpg';
+
 
 class Image extends Component {
   render() {

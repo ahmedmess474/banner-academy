@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Link, NavLink } from 'react-router-dom';
-import logo from './banner_logo.png';
+import logo from '../../image/banner_logo.png';
+//'./banner_logo.png';
 
 
 class Navbar extends Component {
@@ -43,6 +44,11 @@ class Navbar extends Component {
     e.preventDefault();
     this.setState({color:true})
   }
+
+  handleScroll = (e) => {
+    e.preventDefault();
+    window.scrollTo({top:0,behavior:"instant"});
+  }
  
   render() {
     return (
@@ -63,10 +69,12 @@ class Navbar extends Component {
         </button>
         <div className="container">
           <div className="collapse navbar-collapse" id="navbarTogglerDemo03">
-              <Link className="btn btn-success-ouline" type='button' to="/inscriptions" style={{marginLeft:"40px"}}>
-                التسجيل
-              </Link>
-              <ul className="navbar-nav mr-auto mt-2 mt-lg-0" style={{marginLeft:"40px"}}>
+              <ul className="navbar-nav mr-auto mt-2 mt-lg-0" style={{marginLeft:"40px",paddingTop:"10px",paddingBottom:"5px"}}>
+                <li className="nav-item">
+                  <Link className="btn btn-success-ouline" type='button' to="/inscriptions" style={{marginLeft:"40px",marginRight:"40px"}}>
+                    التسجيل
+                  </Link>
+                </li>
                 <li className="nav-item active" style={{marginLeft:"20px"}}>
                   <Link className="nav-link" to="/callus" onMouseEnter={this.handleEnter} onMouseLeave={this.handleLeave}>
                     <i className="fas fa-arrow-down"></i>
@@ -114,7 +122,7 @@ class Navbar extends Component {
                   </Link>
                 </li>
                 <li className="nav-item active" style={{marginLeft:"10px"}}>
-                  <Link className="nav-link" to="/tours">
+                  <Link className="nav-link" to="/cours">
                     دورات مميزة
                     <i className="fa fa-handshake" aria-hidden="true" style={{marginLeft:"7px"}}></i>
                   </Link>
@@ -125,11 +133,17 @@ class Navbar extends Component {
                     <i className="fa fa-university" aria-hidden="true" style={{marginLeft:"7px"}}></i>
                   </Link>
                 </li>
+                <li className="nav-item">
+                  <NavLink className="navbar-brand" to="/" style={{marginLeft:"80px",color:"white"}}>
+                    <img src={logo} width="45" height="45" alt="" style={{marginRight:"5px"}}/>
+                    Banner Academy
+                  </NavLink>
+                </li>
               </ul>
-              <NavLink className="navbar-brand" to="/" style={{marginLeft:"80px"}}>
+              {/* <NavLink className="navbar-brand" to="/" style={{marginLeft:"80px"}}>
                 <img src={logo} width="45" height="45" alt="" />
                 Banner Academy
-              </NavLink>
+              </NavLink> */}
             </div>
         </div>
       </nav>

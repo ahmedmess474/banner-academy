@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
-import Card from './Card';
-import Partone from './Partone';
-import Parttwo from './Parttwo';
-import Partthree from './Partthree';
-import Partfour from './Partfour';
-import Partfive from './Partfive';
-import Partsix from './Partsix';
-import Partseven from './Partseven';
-import Footer from './Footer';
+import Card from './Layout/Card';
+import Partone from './others/Partone';
+import Parttwo from './others/Parttwo';
+import Partthree from './others/Partthree';
+import Partfour from './others/Partfour';
+import Partfive from './others/Partfive';
+import Partsix from './others/Partsix';
+import Partseven from './others/Partseven';
+import Footer from './Layout/Footer';
 
 
 class HomePage extends Component {
