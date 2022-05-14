@@ -39,7 +39,7 @@ class Partseven extends Component {
             <div className="col-md-6">
               <div>
                 <h3 style={{direction:"rtl"}}>تعرف على مدرسة تكوين</h3>
-                <p style={{direction:"rtl"}}>مدرسة تكوين هي صرح علمي مستقل للتعلم. هدفنا تزويد مجتمعاتنا فرص دراسة مختلف التخصصات بطريقة فريدة من نوعها، وذلك عبر برنامج متميز وبأسلوب متطور باستخدام الشبكة الإلكترونية.</p>
+                <p style={{direction:"rtl",fontSize:"small"}}>مدرسة تكوين هي صرح علمي مستقل للتعلم. هدفنا تزويد مجتمعاتنا فرص دراسة مختلف التخصصات بطريقة فريدة من نوعها، وذلك عبر برنامج متميز وبأسلوب متطور باستخدام الشبكة الإلكترونية.</p>
               </div>
               <div className="card" style={{direction:"rtl",cursor:"pointer"}} onClick={this.handleClick}>
                 <h5 style={{color:"rgb(32 31 66)",marginTop:"18px",marginRight:"10px",marginBottom: this.state.one ? "18px" : "9px"}}>
@@ -49,7 +49,7 @@ class Partseven extends Component {
                   </h5>
                   {this.state.one ? null : 
                   <div className="container">
-                    <p style={{direction:"rtl",marginTop:"10px",color:"black"}}>
+                    <p style={{direction:"rtl",marginTop:"10px",color:"black",fontSize:"small"}}>
                       هذا البرنامج يتيح الفرصة لمن لم يتسن له إتمام التكوين الجامعي أو المهني حتى يتأهل إلى التميز في سوق العمل
                     </p>
                   </div> }
@@ -63,7 +63,7 @@ class Partseven extends Component {
                   </h5>
                   {this.state.two ? null :
                   <div className="container">
-                    <p style={{direction:"rtl",marginTop:"10px",color:"black"}}>
+                    <p style={{direction:"rtl",marginTop:"10px",color:"black",fontSize:"small"}}>
                       تمنحك مدرسة تكوين الفرصة لتقديم حلول اقتصادية وفعالة بشكل خاص، وفقًا لاحتياجاتك الحقيقية وتطلعاتك على المستوى الفني والتصميمي من خلال جعل كل عميل أو أستاذ فريدًا وبصمة خاصة به.
                     </p>
                   </div> }
@@ -77,7 +77,7 @@ class Partseven extends Component {
                   </h5>
                   {this.state.three ? null : 
                   <div className="container">
-                    <p style={{direction:"rtl",marginTop:"10px",color:"black"}}>
+                    <p style={{direction:"rtl",marginTop:"10px",color:"black",fontSize:"small"}}>
                       المهارات المهنية: نحن نقدم التجربة الرقمية وفقًا للاتجاهات الرئيسية ذات التقنية العالية واللمس العالي التي توفر لك خدمة متقدمة. <br/>
 
                       الشفافية: نجيب على أسئلتك بصراحة وحرية ونزودك باقتباسات مفصلة. <br/>

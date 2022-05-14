@@ -8,14 +8,16 @@ import Partfive from './others/Partfive';
 import Partsix from './others/Partsix';
 import Partseven from './others/Partseven';
 import Footer from './Layout/Footer';
-
+import {Animated} from 'react-animated-css';
 
 class HomePage extends Component {
   render() {
     return (
       <div className="App">
         <Card />
-        <Partone />
+        <Animated animationIn="fadeInLeft" animationOut="rotateIn" isVisible={true}>
+          <Partone />
+        </Animated>
         <Parttwo />
         <Partthree />
         <Partfour />

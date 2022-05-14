@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import img1 from '../../image/img1.png';
 import img4 from '../../image/img4.svg';
+import  {Animated} from "react-animated-css";
+
 
 class Partone extends Component {
-  
   state={
     color:true
   }
@@ -11,7 +12,7 @@ class Partone extends Component {
   onHover = (e) => {
     e.preventDefault();
     this.setState({color:false});
-  }
+  } 
 
   onLeave = (e) => {
     e.preventDefault();
@@ -26,9 +27,10 @@ class Partone extends Component {
           <h5 className="text-center" style={{marginTop:"30px"}}>ابدأ رحلتك في طلب العلم عبر أحد برامجنا!</h5>
           <div className="row" style={{marginTop:"40px"}}>
             <div className="col-md-3">
+            <Animated animationIn="shake" animationOut="rotateIn" isVisible={true}>
               <div className="card" style={{backgroundColor:"white",height:"330px"}}>
                 <img src={img1} height="50px" width="50px" alt="" style={{marginTop:"40px",marginBottom:"20px",alignSelf:"center"}} />
-                <h4 className="text-center ctn" style={{cursor:"pointer",color:this.state.color ? "black" : "#56e3bd"}} onMouseEnter={this.onHover} onMouseLeave={this.onLeave}>
+                <h4 className="text-center" style={{cursor:"pointer",color:this.state.color ? "black" : "#56e3bd"}} onMouseEnter={this.onHover} onMouseLeave={this.onLeave}>
                   الخياطة والطرز
                 </h4>
                 <div className="container">
@@ -37,6 +39,7 @@ class Partone extends Component {
                   </h6>
                 </div>
               </div>
+            </Animated>
             </div>
             <div className="col-md-3">
               <div className="card" style={{backgroundColor:"white",height:"330px"}}>

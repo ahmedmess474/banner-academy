@@ -1,5 +1,5 @@
 .hero-img > img {
-  animation: up-down 2.5s ease-in-out infinite alternate-reverse both;
+  animation: up-down 0.5s ease-in-out infinite alternate-reverse both;
   animation-name: bounceImage;
 }
 @keyframes bounceImage {
@@ -66,4 +66,9 @@
   color: white;
   background-color: #ffffff12;
   border-color: #6ae7c5;
+}
+
+.ctn{
+  color:"yellow" !important;
+  cursor:"pointer"
 }
