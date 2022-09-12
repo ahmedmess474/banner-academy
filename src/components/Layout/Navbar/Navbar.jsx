@@ -5,7 +5,7 @@ import RegistrationLink from './RegistrationLink';
 
 function Navbar() {
   return (
-    <nav className='navbar navbar-expand-lg fixed-top   mx-2' style={{direction: "rtl", backgroundColor:"rgb(32 31 66)", color:'white'}}>
+    <nav className='navbar navbar-expand-lg fixed-top ' style={{direction: "rtl", backgroundColor:"rgb(32 31 66)", color:'white'}}>
       <Brand />
       <button className='navbar-toggler' type='button' data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>

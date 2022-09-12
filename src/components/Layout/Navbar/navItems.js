@@ -27,7 +27,6 @@ const navItems = [
         name:"دروس الدعم", 
         icon: <i className="fa fa-users" aria-hidden="true" style={iconStyle}></i>,
         className,
-        secondIcon,
         style:style
     },
     {
@@ -42,7 +41,6 @@ const navItems = [
         name:"إتصل بنا", 
         icon: <i className="fa fa-envelope" aria-hidden="true" style={iconStyle}></i>,
         className,
-        secondIcon,
         style:style
     },
 ];

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-scroll';
 import navItems from './navItems';
+import './nav.css';
 
 function NavList() {
   return (
@@ -8,10 +9,9 @@ function NavList() {
         {navItems.map(item => {
            return (
                <li className={item.className} style={item.style}>
-                    <Link className="nav-link">
+                    <Link className="nav-link link-hover">
                         {item.icon}
                         {item.name}
-                        {item.secondIcon && item.secondIcon}
                     </Link>
                 </li>
             )
