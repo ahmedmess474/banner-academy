@@ -6,16 +6,16 @@ import './nav.css';
 function NavList() {
   return (
     <ul className='navbar-nav mx-auto'>
-        {navItems.map(item => {
-           return (
-               <li className={item.className} style={item.style}>
-                    <Link className="nav-link link-hover">
-                        {item.icon}
-                        {item.name}
-                    </Link>
-                </li>
-            )
-        })}
+      {navItems.map(item => {
+          return (
+            <li className={item.className} style={item.style}>
+              <Link className="nav-link link-hover">
+                {item.icon}
+                {item.name}
+              </Link>
+            </li>
+          )
+      })}
     </ul>
   )
 }
