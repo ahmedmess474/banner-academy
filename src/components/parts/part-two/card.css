@@ -1,0 +1,6 @@
+.cardhover:hover {
+    transform: scale(1.15);
+    transition-duration: 800ms;
+    box-shadow: 0 0 10px rgba(31, 32, 66, 0.6);
+    z-index: 10;
+}
