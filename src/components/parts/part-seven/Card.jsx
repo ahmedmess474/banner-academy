@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import cardItems from "./cardItems";
+import React from "react";
 
 function Card({ desc }) {
     return (
