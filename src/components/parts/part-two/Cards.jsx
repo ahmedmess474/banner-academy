@@ -9,7 +9,7 @@ function Cards() {
                 <div className='col-md-3' key={item.id}>
                     <div className="card" style={{backgroundColor:"white",height:"330px"}}>
                         {item.image}
-                        <h4 className="text-center">
+                        <h4 className="text-center link-hover " style={{cursor: "pointer"}}>
                             {item.title} 
                         </h4>
                         <div className="container">
