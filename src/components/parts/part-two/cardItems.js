@@ -1,10 +1,9 @@
-import { sewing } from "../../../utilities/images";
-
-const reseauxURL = "https://i.ibb.co/FgjKb82/reseaux-security.png";
-
-const graphicDesign = "https://i.ibb.co/t8x4gyy/graphic-design.png";
-
-const languages = "https://i.ibb.co/f4Zc8gh/languages.png";
+import {
+    sewing,
+    reseauxURL,
+    languages,
+    graphicDesign
+} from "../../../utilities/images";
 
 const imageStyle = {
     marginTop: "40px",
