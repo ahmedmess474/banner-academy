@@ -1,6 +1,4 @@
 import React, { Component } from 'react'
-import Partsix from './others/Partsix';
-import Partseven from './others/Partseven';
 import Footer from './Layout/Footer';
 import Navbar from './Layout/Navbar/Navbar';
 import PartOne from './parts/part-one/PartOne';
@@ -8,6 +6,8 @@ import PartTwo from './parts/part-two/PartTwo';
 import PartThree from './parts/part-three/PartThree';
 import PartFour from './parts/part-four/PartFour';
 import PartFive from './parts/part-five/PartFive';
+import PartSix from './parts/part-six/PartSix';
+import PartSeven from './parts/part-seven/PartSeven';
 
 class HomePage extends Component {
   render() {
@@ -30,8 +30,12 @@ class HomePage extends Component {
         <>
           <PartFive />
         </>
-          <Partsix />
-          <Partseven />
+        <>
+          <PartSix />
+        </>
+        <>
+          <PartSeven />
+        </>
           <Footer />
         </>
       </div>
