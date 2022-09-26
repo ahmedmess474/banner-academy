@@ -22,7 +22,9 @@ class HomePage extends Component {
           <PartTwo />
         </>
         <>
+        <>
           <Partthree />
+        </>
           <Partfour />
           <Partfive />
           <Partsix />
