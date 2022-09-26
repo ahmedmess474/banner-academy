@@ -3,7 +3,7 @@ import DownSide from "./DownSide";
 
 const cardStyle = {
     background:
-        "linear-gradient(180deg, rgba(31,32,66,1) 10%, rgba(86,227,189,1) 60%)",
+        "linear-gradient(180deg, rgba(31,32,66,1) 0%, rgba(86,227,189,1) 100%)",
     borderTopLeftRadius: "24px",
     borderBottomRightRadius: "24px",
     position: "relative"
